@@ -1,5 +1,19 @@
 {
   "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@apps/*": ["./apps/*"],
+      "@assets/*": ["./assets/*"],
+      "@constant/*": ["./constant/*"],
+      "@locales/*": ["./locales/*"],
+      "@components/*": ["./components/*"],
+      "@hooks/*": ["./hooks/*"],
+      "@modules/*": ["./modules/*"],
+      "@utils/*": ["./utils/*"],
+      "@public/*": ["./public/*"],
+      "@services/*": ["./services/*"],
+      "@mock/*": ["./mock/*"]
+    },
     "target": "es5",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
