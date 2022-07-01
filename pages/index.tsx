@@ -5,6 +5,7 @@ import styles from "../styles/pages/Home.module.scss";
 
 import Products from "mock/product.json";
 import Link from "next/link";
+import { useEffect } from "react";
 
 const Home: NextPage = () => {
   return (
@@ -20,7 +21,7 @@ const Home: NextPage = () => {
           <h2>Products</h2>
 
           <div className={styles.product_wrapper}>
-            {Products.data.map((item: any, index: any) => (
+            {Products.data.map((item: any, index: number) => (
               <Link href={`/${index}`} key={index}>
                 <div className={styles.flex_item}>
                   <div className="card">
